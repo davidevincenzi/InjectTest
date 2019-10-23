@@ -8,13 +8,41 @@
 
 import UIKit
 
+struct AppDependenciesModule: AppDependenciesModuleType {
+    
+    func component() -> MessageReporter {
+        SentryMessageReporter()
+    }
+}
+
+// MARK: API
+
+protocol AppDependenciesModuleType {
+    func component() -> MessageReporter
+}
+
+private let dependencies = Dependencies {
+    Module { AppDependenciesModule() as AppDependenciesModuleType }
+}
+
+protocol MessageReporter {
+    func sendMessage()
+}
+
+class SentryMessageReporter: MessageReporter {
+    func sendMessage() {
+        print("sent!")
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        dependencies.build()
+        
         return true
     }
 

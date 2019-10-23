@@ -13,6 +13,7 @@
 		6B1E1CBA236049270017323B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1E1CB8236049270017323B /* Main.storyboard */; };
 		6B1E1CBC236049280017323B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1E1CBB236049280017323B /* Assets.xcassets */; };
 		6B1E1CBF236049280017323B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1E1CBD236049280017323B /* LaunchScreen.storyboard */; };
+		6B1E1CC72360493A0017323B /* Shank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1E1CC62360493A0017323B /* Shank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6B1E1CBB236049280017323B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B1E1CBE236049280017323B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B1E1CC0236049280017323B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1E1CC62360493A0017323B /* Shank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6B1E1CB2236049270017323B /* AppDelegate.swift */,
 				6B1E1CB4236049270017323B /* SceneDelegate.swift */,
 				6B1E1CB6236049270017323B /* ViewController.swift */,
+				6B1E1CC62360493A0017323B /* Shank.swift */,
 				6B1E1CB8236049270017323B /* Main.storyboard */,
 				6B1E1CBB236049280017323B /* Assets.xcassets */,
 				6B1E1CBD236049280017323B /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				6B1E1CB7236049270017323B /* ViewController.swift in Sources */,
 				6B1E1CB3236049270017323B /* AppDelegate.swift in Sources */,
 				6B1E1CB5236049270017323B /* SceneDelegate.swift in Sources */,
+				6B1E1CC72360493A0017323B /* Shank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

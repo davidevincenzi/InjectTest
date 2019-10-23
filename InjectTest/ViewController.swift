@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @Inject private var appDependenciesModule: AppDependenciesModuleType
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let messageReporter: MessageReporter = appDependenciesModule.component()
+        messageReporter.sendMessage()
     }
 
 
